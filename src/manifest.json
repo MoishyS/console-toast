@@ -1,0 +1,14 @@
+{
+    "name": "console-toast",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "web_accessible_resources": [{
+        "resources": ["toastr.min.js","console.js"],
+        "matches": ["<all_urls>"]
+    }],
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "css": ["toastr.min.css"],
+        "js": ["script.js"]
+    }]
+}
